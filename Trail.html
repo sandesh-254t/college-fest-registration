@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>College Fest Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="trail.css">
+</head>
+
+<body>
+    <p style="text-align:center; margin-top:20px;">
+    <a href="/admin.html">Admin Login</a>
+</p>
+
+<form action="/submit" method="POST">
+    <h1>Welcome to COLLEGE FEST</h1>
+
+    <p>We're glad to see you here and interested in registration for our fest.</p>
+    <p>Please fill the form below to enter the fest.</p>
+
+    <div class="input-group">
+        <input type="text" name="name" required>
+        <label>Name</label>
+    </div>
+
+    <div class="gender-title">Gender:</div>
+    <div class="gender-group">
+        <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+    </div>
+
+    <div class="input-group" >
+        <input type="number" name="phone" required>
+        <label>Phone</label>
+    </div>
+
+    <div class="input-group" >
+        <input type="email" name="email" required>
+        <label>E-mail</label>
+    </div>
+
+    <button type="submit">SUBMIT</button>
+
+</form>
+<footer>
+    <div class="developer">
+    Developed with ❤️ by <strong>Sandesh</strong> | CSE Student
+</div>
+
+</footer>
+</body>
+
+</html>

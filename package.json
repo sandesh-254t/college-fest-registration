@@ -1,0 +1,16 @@
+{
+  "name": "college-fest",
+  "version": "1.0.0",
+  "description": "College Fest Registration App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Sandesh",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
