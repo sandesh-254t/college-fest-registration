@@ -2,8 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require("path");
-const admin_user = process.env.ADMIN_USER;
-const admin_pass = process.env.ADMIN_PASS;
+
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "Trail.html"));
