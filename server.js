@@ -88,6 +88,9 @@ app.get("/admin", (req, res) => {
 
     res.send(html);
 });
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/Trail.html");
+});
 
 app.post("/admin-login", (req, res) => {
     const { username, password } = req.body;
