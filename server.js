@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require("path");
+const admin_user = process.env.ADMIN_USER;
+const admin_pass = process.env.ADMIN_PASS;
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "Trail.html"));
@@ -102,8 +104,10 @@ app.post("/admin-login", (req, res) => {
     const { username, password } = req.body;
 
     // Simple hardcoded credentials
-    const ADMIN_USER = "sandesh";
-    const ADMIN_PASS = "chsandesh254t";
+    const ADMIN_USER = process.env.ADMIN_USER;
+    const ADMIN_PASS = process.env.ADMIN_PASS;
+
+
 
     if (username === ADMIN_USER && password === ADMIN_PASS) {
         res.redirect("/admin");
