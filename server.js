@@ -99,6 +99,15 @@ app.get("/admin", (req, res) => {
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/Trail.html");
 });
+async function connectDB() {
+  await client.connect();
+  const db = client.db("collegeFestDB");
+  collection = db.collection("registrations");
+  console.log("MongoDB Connected");
+}
+
+connectDB();
+
 
 app.post("/admin-login", (req, res) => {
     const { username, password } = req.body;
