@@ -96,8 +96,8 @@ app.post("/admin-login", (req, res) => {
     const { username, password } = req.body;
 
     // Simple hardcoded credentials
-    const ADMIN_USER = "admin";
-    const ADMIN_PASS = "1234";
+    const ADMIN_USER = "sandesh";
+    const ADMIN_PASS = "chsandesh254t";
 
     if (username === ADMIN_USER && password === ADMIN_PASS) {
         res.redirect("/admin");
